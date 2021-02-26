@@ -1,0 +1,43 @@
+header{
+    text-align: center;
+}
+section{
+    text-align: center;
+
+}
+.form-control{
+    text-align: center;
+    width: 350px;
+    margin: 0 auto;
+}
+.mb-3{
+    text-align: center;
+    align-items: center;
+}
+
+.upload{
+    text-align: center;
+
+}
+a{
+    text-align: center;
+    color: white;
+    margin: 0 auto;
+}
+/* Sortable tables */
+table.sortable thead {
+
+    font-weight: bold;
+    cursor: default;
+}
+
+.tabulka{
+    height: 350px;
+    overflow-y: auto;
+
+}
+.stoj,th{
+    position: sticky;
+    top: 0;
+
+}
