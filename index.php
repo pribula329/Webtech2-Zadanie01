@@ -7,6 +7,8 @@
           integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link href="css/dizajn.css" rel="stylesheet">
     <script src="js/sorttable.js"></script>
+    <link rel="icon" href="../img/iconka.png" type="image/png">
+
 </head>
 <body>
 
