@@ -7,7 +7,8 @@
           integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link href="css/dizajn.css" rel="stylesheet">
     <script src="js/sorttable.js"></script>
-    <link rel="icon" href="../img/iconka.png" type="image/png">
+
+    <link rel="icon" href="img/iconka.png" type="image/png" id="ikonka">
 
 </head>
 <body>
@@ -20,7 +21,7 @@
     <?php
     include "generovanieTabulky.php";
     ?>
-<section>
+<section id="vkladanie">
     <h3>Vkladanie súborov do systému</h3>
     <form action="upload.php" method="post" enctype="multipart/form-data">
 

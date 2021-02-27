@@ -1,28 +1,41 @@
 <?php
-$directoryArray = scandir('/home/xpribulal/public_html/pribulikZadanie01/files', 1);
-$directoryArray = array_diff($directoryArray, array('.', '..'));
+$vstupnePole = scandir('/home/xpribulal/public_html/pribulikZadanie01/files', 1);
+$vstupnePole = array_diff($vstupnePole, array('.', '..'));
 echo '
-<section>
+<section >
 <h2>Uložené súbory</h2>
 <div class="tabulka">
-<table   class=" table table-striped sortable " id="table">
+<div id="pokus"></div>
+<table   class=" table sortable  table-striped" id="table">
 <thead class="table-dark">
     <tr>
     <th scope="col">Názov súboru </th>
-    <th scope="col">Veľkosť </th>
-    <th scope="col">Dátum nahrania </th>
+    <th scope="col">Veľkosť súboru </th>
+    <th scope="col">Dátum uploadu súboru </th>
     </tr>
 </thead>
 <tbody >';
-foreach ($directoryArray as $file) {
+foreach ($vstupnePole as $subor) {
+    $FileType = strtolower(pathinfo($subor,PATHINFO_EXTENSION));
 
-    $date = date_create();
+    if($FileType==""){
+        echo '
+            <tr>
+                <td>' .$subor.'</td>
+                <td></td>
+                <td></td>
+            </tr>
+            ';
+    }
+
+ else{
     echo '
             <tr>
-                <td>' .$file.'</td>
-                <td>' .filesize("files/" . $file)." Bytes".'</td>
-                <td>' .date("d F Y H:i:s.", fileatime("files/" . $file)).'</td>
+                <td>' .$subor.'</td>
+                <td>' .filesize("files/" . $subor)." B".'</td>
+                <td>' .date("d F Y H:i:s.", fileatime("files/" . $subor)).'</td>
             </tr>';
+     }
 }
 echo '
 </tbody>

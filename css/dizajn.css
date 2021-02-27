@@ -1,7 +1,11 @@
 body{
-    background-color: orange;
+    margin: 0;
+    background-image: url("../img/pozadie.jpg");
 }
-
+#ikonka{
+    height: 16px;
+    width: 16px;
+}
 header{
     text-align: center;
 }
@@ -17,10 +21,16 @@ section{
 .mb-3{
     text-align: center;
     align-items: center;
-}
+    color: blue;
 
+}
+#vkladanie{
+    border-radius: 5px;
+    background-color: rgba(232, 236, 241, 0.6);
+}
 .upload{
     text-align: center;
+    color: blue;
 
 }
 a{
@@ -44,4 +54,14 @@ table.sortable thead {
     position: sticky;
     top: 0;
 
+}
+table{
+    background-color: white;
+}
+h1,p,h2{
+    color: orange;
+}
+
+h3{
+    color: blue;
 }
